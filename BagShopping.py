@@ -51,6 +51,7 @@ sleep(3)
 driver.find_element(by="xpath",value='//span[text()="Pay now"]/parent::button').click()
 
 sleep(10)
+driver.close()
 
 
 
