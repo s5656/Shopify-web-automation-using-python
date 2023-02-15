@@ -14,4 +14,5 @@ driver.find_element(by="xpath",value='//*[@id="Search-In-Modal"]').send_keys("Su
 
 driver.find_element(by="xpath",value='//*[@id="shopify-section-header"]/sticky-header/header/div/details-modal/details/div/div[2]/predictive-search/form/div[1]/button').click()
 sleep(5)
+
 driver.close()
