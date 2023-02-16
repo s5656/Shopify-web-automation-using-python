@@ -7,7 +7,7 @@ driver.maximize_window()
 driver.implicitly_wait(10)
 
 driver.get("https://testvagrant.myshopify.com/")
-driver.find_element(By.XPATH,'//*[@id="Banner-template--16876710920493__image_banner"]/div[2]/div/div[2]/a').click()
+driver.find_element(By.XPATH,'//*[@class="button button--secondary"]').click()
 
 driver.find_element(By.XPATH,'//*[@id="title-template--16876710854957__product-grid-8002225537325"]').click()
 
