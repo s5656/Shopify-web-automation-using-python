@@ -37,7 +37,7 @@ if buyNow.is_enabled():
 
     driver.switch_to.frame(driver.find_element(By.XPATH, '(//iframe[@class="card-fields-iframe"])[1]'))
     driver.find_element(By.XPATH, '//label[text()="Card number"]/following-sibling::input[@id="number"]').send_keys("1")
-    driver.switch_to.parent_frame();
+    driver.switch_to.default_content()
 
     driver.switch_to.frame(driver.find_element(By.XPATH, '(//iframe[@class="card-fields-iframe"])[2]'))
     driver.find_element(By.XPATH, '//label[text()="Name on card"]/following-sibling::input[@id="name"]').send_keys("Sumit")

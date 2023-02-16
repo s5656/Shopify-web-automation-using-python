@@ -11,9 +11,9 @@ print(driver.title)
 print(driver.current_url)
 
 daysCheckBox=driver.find_elements(By.XPATH, '//input[@type="checkbox" and contains(@id,"day")]')
-#
+
 # for day in daysCheckBox:
-#     day.click()
+#     day.click()         #this will click on all the cheakbox
 
 for day in daysCheckBox:
     selectedDays = day.get_attribute("id")
